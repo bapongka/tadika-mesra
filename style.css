@@ -4,11 +4,16 @@ body {
   font-size: 1rem;
   font-family: "Righteous", cursive;
   /* height: 500vh; */
+  /* color: #c57ed3;
+  color: #490d40; */
 }
 
 .navbar {
   width: 100%;
-  background-color: lightpink;
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
 }
 
 .navbar .nav {
@@ -35,6 +40,12 @@ body {
   display: inline;
   padding-left: 50px;
 }
+
+/* .navbar .solid {
+  background-color: #490d40;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+} */
 
 .header {
   background: url("/assets/bg.jpg");
@@ -95,8 +106,27 @@ body {
   width: 50%;
 }
 
+.item-text h4 {
+  font-size: 2rem;
+}
+
+.item-text p {
+  color: rgb(114, 114, 114);
+}
+
+.item-text h3 {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: hsl(51, 100%, 49%, 0.2);
+  text-decoration-thickness: 5px;
+}
+
+.item-text h3:hover {
+  text-decoration-color: hsl(51, 100%, 49%);
+}
+
 .bg1 {
-  background: url("/assets/content/content1.jpg");
+  background: url("/assets/content/content4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +134,7 @@ body {
 }
 
 .bg2 {
-  background: url("/assets/content/content4.jpg");
+  background: url("/assets/content/content8.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,6 +146,21 @@ body {
   margin-top: 500px;
   color: white;
   /* margin: auto; */
+}
+
+.content-text h4 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.content-text p {
+  width: 75%;
+  margin-left: 100px;
+}
+
+.client {
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 .client h1 {
@@ -138,6 +183,14 @@ body {
   border-radius: 100px;
 }
 
+.detail-client p {
+  color: rgb(114, 114, 114);
+}
+
+.detail-client h3 {
+  margin-bottom: -15px;
+}
+
 .gallery {
   display: flex;
 }
@@ -152,9 +205,11 @@ body {
   height: 500px;
 }
 
-footer {
+.footer {
   background-color: lightpink;
-  width: 100%;
+  margin-top: -21px;
+  margin-bottom: -20px;
+  /* width: 100%; */
 }
 
 /* footer .title {
@@ -174,6 +229,15 @@ footer {
   padding-right: 10px;
 } */
 
-footer p {
+.footer p {
   text-align: center;
+}
+
+.footer span {
+  color: white;
+  cursor: pointer;
+}
+
+.footer span:hover {
+  color: rgb(212, 90, 131);
 }
