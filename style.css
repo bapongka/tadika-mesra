@@ -9,42 +9,51 @@ body {
   padding: 0;
   font-size: 1rem;
   font-family: "Righteous", cursive;
-  /* height: 500vh; */
-  /* color: #c57ed3;
-  color: #490d40; */
 }
 
-.navbar {
+#nav-checkbox,
+.nav-toggle {
+  display: none;
+}
+
+header {
   width: 100%;
   background-color: transparent;
   color: white;
   position: fixed;
-  top: 0;
-}
-
-.navbar .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.5s ease;
+  /* margin-top: -10px;
+  margin-bottom: -20px; */
 }
 
-.nav .nav-item {
-  padding: 0 50px;
-}
-
-.nav-item h1 {
+header h1 {
   font-family: "Fredoka One", cursive;
   text-transform: uppercase;
+  padding-left: 80px;
 }
 
-.nav-item ul {
-  list-style-type: none;
-  padding-right: 60px;
+.navbar ul {
+  padding-right: 50px;
 }
 
 .nav-item li {
-  display: inline;
-  padding-left: 50px;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 10px 0;
+}
+
+.nav-item li a {
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.nav-item li:hover {
+  background-color: hsl(0, 0%, 100%, 0.5);
 }
 
 .solid {
@@ -53,7 +62,7 @@ body {
   box-shadow: 0 0 4px grey;
 }
 
-.header {
+.hero {
   background: linear-gradient(rgba(29, 29, 29, 0.8), rgba(27, 27, 27, 0.6)), url("/assets/bg.jpg") no-repeat fixed bottom / cover;
   height: 100vh;
   background-position: center;
@@ -63,7 +72,7 @@ body {
   text-align: center;
 }
 
-.header-item p {
+.hero-item p {
   color: white;
   font-size: 5rem;
   margin: auto;
@@ -157,8 +166,8 @@ body {
 }
 
 .client {
-  padding-bottom: 100px;
-  padding-top: 50px;
+  padding-bottom: 250px;
+  padding-top: 200px;
 }
 
 .client h1 {
@@ -195,47 +204,58 @@ body {
 
 .gallery-item {
   width: 50%;
-  /* height: auto; */
+  height: auto;
+  display: block;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
-.footer {
+footer {
+  width: 100%;
   background-color: lightpink;
+  text-align: center;
+}
+
+footer .logo {
+  color: white;
+  font-family: "Fredoka One", cursive;
+  text-transform: uppercase;
+  padding-top: 1px;
+}
+
+footer ul {
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
+
+footer li {
+  margin: 15px;
+  display: inline-block;
+}
+
+footer li:hover {
+  fill: lightpink;
+}
+
+.attribution {
+  background-color: white;
   margin-top: -21px;
   margin-bottom: -20px;
-  /* width: 100%; */
 }
 
-/* footer .title {
+.attribution p {
   text-align: center;
+  font-size: 0.9rem;
 }
 
-.sosmed ul {
-  list-style: none;
-  text-align: center;
-  margin-left: -30px;
-  margin-top: 5px;
-  margin-bottom: -15px;
-}
-
-.sosmed li {
-  display: inline;
-  padding-right: 10px;
-} */
-
-.footer p {
-  text-align: center;
-}
-
-.footer span {
-  color: white;
+.attribution span {
+  color: blue;
   cursor: pointer;
 }
 
-.footer span:hover {
-  color: rgb(212, 90, 131);
+.attribution span:hover {
+  color: lightpink;
 }
