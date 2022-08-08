@@ -63,7 +63,7 @@ header h1 {
 }
 
 .hero {
-  background: linear-gradient(rgba(29, 29, 29, 0.8), rgba(27, 27, 27, 0.6)), url("/assets/bg.jpg") no-repeat fixed bottom / cover;
+  background: linear-gradient(rgba(29, 29, 29, 0.8), rgba(27, 27, 27, 0.6)), url("./assets/bg.jpg") no-repeat fixed bottom / cover;
   height: 100vh;
   background-position: center;
   display: flex;
@@ -133,14 +133,14 @@ header h1 {
 }
 
 .bg1 {
-  background: url("/assets/content/content4.jpg");
+  background: url("./assets/content/content4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bg2 {
-  background: url("/assets/content/content7.jpg");
+  background: url("./assets/content/content7.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
